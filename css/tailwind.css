@@ -2,9 +2,22 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
+html {
   background: rgb(131,58,180);
   background: linear-gradient(23deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   min-height: 100vh;
   color: #fff;
+}
+
+.hero-logo {
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
 }
