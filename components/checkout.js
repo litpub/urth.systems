@@ -8,8 +8,8 @@ const Checkout = () => {
   const goToCheckout = () => {
     stripe.redirectToCheckout({
       items: [{plan: process.env.STRIPE_PLAN_ID, quantity: 1}],
-      successUrl: 'https://urth-systems.now.sh/success',
-      cancelUrl: 'https://urth-systems.now.sh/canceled',
+      successUrl: 'https://www.urth.systems/success',
+      cancelUrl: 'https://www.urth.systems/',
     })
     .then(function (result) {
       if (result.error) {
@@ -24,7 +24,7 @@ const Checkout = () => {
       <h4 className="md:text-xl font-thin leading-relaxed max-w-2xl mx-auto mb-10">
         Unlike many OpenSea sellers, <strong>urth</strong> is a star operator. We give you a planet for free with our sponsorship service - and it's yours forever, even if you cancel.
       </h4>
-      <button onClick={goToCheckout} className="bg-white text-black hover:text-white font-semibold py-4 px-8 md:text-xl hover:bg-transparent hover:border hover:border-white rounded">
+      <button onClick={goToCheckout} className="bg-white text-black font-semibold py-4 px-8 md:text-xl rounded hover:text-white hover:bg-transparent hover:border hover:border-white">
         Buy Planet Sponsorship
       </button>
       <p className="mt-6">
