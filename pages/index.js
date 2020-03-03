@@ -8,7 +8,7 @@ const Home = () => (
           urth
         </h1>
 
-        <h2 className="md:text-4xl text-2xl font-bold mb-2">
+        <h2 className="md:text-4xl text-xl font-bold mb-2">
           Infrastructure for the next internet
         </h2>
         

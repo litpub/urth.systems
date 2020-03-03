@@ -20,7 +20,7 @@ const Checkout = () => {
 
   return (
     <div>
-      <h3 className="md:text-4xl text-2xl font-bold mb-4">Fast, Reliable Urbit Planets</h3>
+      <h3 className="md:text-4xl text-xl font-bold mb-2">Fast, Reliable Urbit Planets</h3>
       <h4 className="md:text-xl font-thin leading-relaxed max-w-2xl mx-auto mb-10">
         Unlike many OpenSea sellers, <strong>urth</strong> is a star operator. We give you a planet for free with our sponsorship service - and it's yours forever, even if you cancel.
       </h4>
