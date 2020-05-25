@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 
 const SiteLayout = ({ children }) => (
   <main>
@@ -8,8 +10,12 @@ const SiteLayout = ({ children }) => (
       <script src="https://js.stripe.com/v3"></script>
     </Head>
     { children }
+    <hr className="mt-10 border-white border-opacity-25"/>
     <footer className="m-10 text-center">
-      <a href="mailto:litpub@cryptocculture.com" className="rounded border border-white text-white p-2">Support</a>
+      <Link href="/account">
+        <a className="rounded border border-white text-white p-2 m-2 hover:text-black hover:bg-white">Manage Account</a>
+      </Link>
+      <a href="mailto:admin@urth.systems" className="rounded border border-white text-white p-2 m-2 hover:text-black hover:bg-white">Support</a>
     </footer>
   </main>
 )
