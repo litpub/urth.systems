@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.1.1",
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.8.4",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "next": "^9.4.2",

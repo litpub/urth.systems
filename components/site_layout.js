@@ -15,6 +15,7 @@ const SiteLayout = ({ children }) => (
       <Link href="/account">
         <a className="rounded border border-white text-white p-2 m-2 hover:text-black hover:bg-white">Manage Account</a>
       </Link>
+      <a href="https://litpub.arvo.network/status" className="rounded border border-white text-white p-2 m-2 hover:text-black hover:bg-white">System Status</a>
       <a href="mailto:admin@urth.systems" className="rounded border border-white text-white p-2 m-2 hover:text-black hover:bg-white">Support</a>
     </footer>
   </main>
