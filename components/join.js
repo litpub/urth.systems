@@ -10,8 +10,8 @@ export default ({ text, plan }) => {
         price: plan || process.env.STRIPE_PLAN_WITH_PLANET, quantity: 1
       }],
       mode: 'subscription',
-      successUrl: 'http://127.0.0.1:3000/success',
-      cancelUrl: 'http://127.0.0.1:3000/',
+      successUrl: 'https://www.urth.systems/success',
+      cancelUrl: 'https://www.urth.systems/',
     })
     .then(function (result) {
       if (result.error) {
