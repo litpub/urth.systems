@@ -1,7 +1,7 @@
 import Join from '../components/join';
 
-const Section = ({ children, width }) => (
-  <section className={`flex-1 min-h-screen mt-20 mb-20 ${width || "max-w-4xl"}`}>
+const Section = ({ children, width, id }) => (
+  <section id={id} className={`flex-1 min-h-screen mt-20 mb-20 ${width || "max-w-4xl"}`}>
     { children }
   </section>
 )
@@ -27,9 +27,9 @@ const Home = () => (
         </h2>
         <section>
           <Join />
-          <button className="bg-white bg-opacity-50 hover:bg-opacity-100 hover:text-black text-gray-800 font-bold py-4 px-4 md:py-4 md:px-8 md:text-xl rounded hover:shadow-2xl ml-4">
+          <a href="#migrate" className="text-gray-300 hover:text-white hover:text-underline font-bold py-4 px-4 md:py-4 md:px-8 md:text-xl ml-4">
             Migrate a Planet
-          </button>
+          </a>
         </section>
       </section>
       <Section>
@@ -87,7 +87,7 @@ const Home = () => (
         </Header>
 
         <p className="text-xl md:text-3xl leading-relaxed mb-4">
-          Urth is a $5 a month.
+          Urth is $5 a month.
         </p>
 
         <p className="text-xl md:text-3xl leading-relaxed mb-4">
@@ -98,7 +98,7 @@ const Home = () => (
           If you cancel, you'll lose access to the Urth community but your Urbit ID is yours forever.
         </p>
       </Section>
-      <Section>
+      <Section id="migrate">
         <Header>
           Are you an Urbit user already? <br/> We are a reliable star ready for you to escape to.
         </Header>
@@ -114,7 +114,7 @@ const Home = () => (
         <p className="text-xl md:text-3xl leading-relaxed mb-8">
           We keep and collect only the minimum necessary information to do business.
         </p>
-        <Join text={'Migrate to Urth'}/>
+        <Join text={'Migrate to Urth'} plan={process.env.STRIPE_PLAN}/>
       </Section>
     </section>
   </div>
