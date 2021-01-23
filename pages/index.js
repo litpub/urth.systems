@@ -55,7 +55,7 @@ const Home = () => (
         </p>
 
         <p className="text-xl mb-8">
-          While the costs of maintaining Urth are low, financial support helps us be resilient. For $5 a month you can skip needing to be recommended.
+          While the costs of maintaining Urth are low, financial support helps us be resilient. For $5 a month you can skip needing to be recommended. Enter your current Urbit ID below to start.
         </p>
 
         <Join />
