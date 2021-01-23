@@ -18,7 +18,8 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "stripe": "^8.127.0",
-    "tailwindcss": "^1.9.6"
+    "tailwindcss": "^1.9.6",
+    "urbit-ob": "^5.0.1"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.0",

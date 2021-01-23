@@ -7,11 +7,11 @@ const Success = () => (
         </h1>
 
         <h2 className="md:text-4xl text-2xl font-bold mb-2">
-          Your payment was successful
+          Your payment was successful.
         </h2>
         
         <p className="md:text-xl font-thin leading-relaxed max-w-md mx-auto mb-10">
-          You will receive an email with onboarding instructions.<br/> Please allow up to 24 hours for delivery.
+          You will will receive a group invite from ~litpub within 24 hours.
         </p>
       </section>
       <section className="flex-1">
