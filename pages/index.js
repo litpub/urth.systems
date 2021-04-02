@@ -39,23 +39,15 @@ const Home = () => (
       </Section>
       <Section>
         <Header>
-          Two ways to join
+          Invite only
         </Header>
 
         <p className="text-3xl mb-4">
-          <strong>1. Have a friend recommend you</strong>
+          <strong>Have a friend recommend you</strong>
         </p>
 
         <p className="text-xl mb-8">
-          The best way to join. People on Urth can request invites for their friends. Ask them to recommend you.
-        </p>
-
-        <p className="text-3xl mb-4">
-          <strong>2. Financial support</strong>
-        </p>
-
-        <p className="text-xl mb-8">
-          While the costs of maintaining Urth are low, financial support helps us be resilient. For $5 a month you can skip needing to be recommended. Enter your current Urbit ID below to start.
+          People on Urth can request invites for their friends. Ask them to recommend you.
         </p>
 
         <Join />
