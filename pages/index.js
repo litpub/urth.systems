@@ -1,5 +1,3 @@
-import Join from '../components/join';
-
 const Section = ({ children, width, id }) => (
   <section id={id} className={`flex-1 min-h-screen mt-20 mb-20 ${width || "max-w-4xl"}`}>
     { children }
@@ -49,8 +47,6 @@ const Home = () => (
         <p className="text-xl mb-8">
           People on Urth can request invites for their friends. Ask them to recommend you.
         </p>
-
-        <Join />
       </Section>
       <Section>
         <Header>
